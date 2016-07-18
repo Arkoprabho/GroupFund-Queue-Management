@@ -10,6 +10,8 @@ Solution: The program consists of 3 main parts
   1. Customer
   2. Banker
   3. Admin
+
+
 Customer: The customer interacts with the online portal where he/she generates a ticket to join the queue. This queue can be seen from the banker page.
 Banker: The banker controls the operations carried out by the banker. Services like loans, deposits etc ar carried out by the banker through the portal. The banker logs in using ID and password that is checked through the database.
 Admin: The admin is the controlling authority of the bank. He/She can control all operations of the bank, like adding new banker, services etc.
