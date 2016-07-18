@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head><title>CUSTOMER</title>
+<style>
+header {
+    
+    background:#ffee58;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-text-stroke: 1px #ffee58 ;
+    
+    padding:10px;
+}
+scroll{
+    background:#1565c0 ;
+    padding:5px;
+    color:#fff59d;
+}
+.login{
+    border-radius: 25px;
+    background: #ffee58;
+    padding: 30px 100px 15px 100px ; 
+    width: 400px;
+    height: 400px; 
+}
+
+.required:after {
+  content: '*';
+  color: #EF5F5F;
+}
+nav {
+    line-height:30px;
+    width:690px;
+    height:100vh;
+    background-color:#fff59d;
+    padding:5px 400px 5px;
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+.button {
+	padding: 5px 10px;
+	background: #2664cf;
+	font-family: Arial, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+	cursor: pointer
+}
+.button {
+	border: 1px solid #4cadfc;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px
+	}
+.button {
+	background: -webkit-gradient(linear, left top, left bottom, from(#0a8ffe), to(#2b5cc6));
+	background: -moz-linear-gradient(top, #0a8ffe, #2b5cc6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a8ffe', endColorstr='#2b5cc6')
+	}
+
+</style>
+</head>
+
+<header style="padding-top:5px;">
+<span style="padding-left:0px;"><img src="icon.jpg" height="110" width="110"/>
+<span style="position:absolute;padding-left:400px;padding-top:30px;">
+<font face="impact" size=20px color="#2243B6">GROUPFUND BANK</font>
+</span>
+</header>
+
+<scroll style="position:relative;padding-top:15px;">
+<marquee>GROUPFUND UNCONSOLIDATED FINANCIAL RESULTS-14/06/2016.
+</marquee>
+</scroll>
+
+<nav>
+<br><br><br>
+<div class="login">
+<form action="Customer_Sign_Up_Controller" method="post">
+<center><b><h2 style="color:#2243B6;">SIGN UP FOR CUSTOMER</h2></b><BR>
+<input type="text" name="fullname" maxlength="40" style="width:395px;" required="required" placeholder="FULL NAME">
+<input type="text" name="username" pattern="[A-Za-z]{3,}" maxlength="40" style="width:395px;" required="required" placeholder="USER NAME"><br>
+<input type="text" name="country" maxlength="4" pattern="\d{4}" style="width:130px;" required="required" placeholder="COUNTRY">
+<input type="text" name="state" maxlength="4" pattern="\d{4}" style="width:120px;" required="required" placeholder="STATE">
+<input type="text" name="branch" maxlength="4" pattern="\d{4}" style="width:130px;" required="required" placeholder="BRANCH">
+
+<input type="password" name="pass" maxlength="40" 
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+ style="width:395px;" required="required" placeholder="NEW PASSWORD"><br>
+</center>
+<font size=2px>
+By clicking Sign up, you agree to our Terms and you have
+read our Data <br> 
+</font>
+<center>
+Policy.<br>
+<input type="submit" name="login" value="SIGN UP" style="width:200px;"class="button">
+</center>
+</form>
+</div>
+</nav>
+
+
+<footer>
+Copyright © GroupFund.com
+</footer>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head><title>CUSTOMER</title>
+<style>
+.required:after {
+  content: '*';
+  color: #EF5F5F;
+}
+a:link{
+    color:black;    
+    text-decoration:none;
+}
+a:visited{
+    color:black;    
+    text-decoration:none;
+}
+a:hover{
+    color:#E45641;
+;
+}
+header {
+    
+    background:#ffee58;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-text-stroke: 1px #ffee58 ;
+    
+    padding:10px;
+}
+scroll{
+    background:#1565c0 ;
+    padding:5px;
+    color:#fff59d;
+}
+
+
+.button {
+	padding: 5px 10px;
+	background: #2664cf;
+	font-family: Arial, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+	cursor: pointer
+}
+.button {
+	border: 1px solid #4cadfc;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px
+	}
+.button {
+	background: -webkit-gradient(linear, left top, left bottom, from(#0a8ffe), to(#2b5cc6));
+	background: -moz-linear-gradient(top, #0a8ffe, #2b5cc6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a8ffe', endColorstr='#2b5cc6')
+	}
+.login{
+    border-radius: 25px;
+    background:#ffee58 ;
+    padding: 20px; 
+    width: 460px;
+    height: 150px; 
+    text-align:justify;
+    padding:20;
+    }
+nav {
+    line-height:30px;
+    height:700px;
+    width:500px;
+    height:100vh;
+    background-color:#fff59d ;
+    float:right;
+    text-align:justify;
+    padding:5px 5px;
+}
+section {
+    width:800px;
+    height:100vh;
+    text-align:justify;
+    float:left;
+    background-color:#fff59d ;
+    padding:10px;
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+</style>
+</head>
+<body>
+
+<header style="padding-top:5px;">
+<span style="padding-left:0px;"><img src="icon.jpg" height="110" width="110"/>
+<span style="position:absolute;padding-left:400px;padding-top:30px;">
+<font face="impact" size=20px color="#2243B6">GROUPFUND BANK</font>
+</span>
+</header>
+
+<scroll style="position:relative;padding-top:15px;">
+<marquee>GROUPFUND UNCONSOLIDATED FINANCIAL RESULTS-14/06/2016.
+</marquee>
+</scroll>
+
+<nav>
+<br><br><br>
+<div class="login">
+<form action="Customer_SignIn_Controller" method="post">
+<center><b ><font size=4px color=#1565c0 >LOGIN</font></b><br>
+<input type="text" name="user_id" required="required" placeholder="USER ID "><br>
+<input type="password" name="pass" maxlength="40" 
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+  required="required" placeholder="PASSWORD"><br>
+<input type="submit" name="login" value="LOG IN" class="button">
+</form>
+<a href="forgot_pass.html">Forgotten your password?</a>
+<span role="presentation" aria-hidden="true"> . </span>
+<a href="sign_up_customer.html">Sign up for banking.</a> 
+</center>
+</div>
+
+<br>
+<br>
+<div class="login">
+The customer can book a ticket, which is generated and 
+printed by using an attached printer.
+The customer can avail the ticket and proceed to the waiting lounge. 
+This ticket number will appear on the central display.  
+<center>
+<form action="myFuntion()">
+<input type="submit" value="GENERATE TICKET" class="button" name="generate">
+<script>
+function myFunction() {
+    alert("I am an alert box!");
+}
+</script>
+</form>
+</center>
+</div>
+</nav>
+
+<section>
+<font size=4px color=#1565c0 >
+<h1>Important Notices:</h1><br>
+</font>
+<font size=4px >
+<p> 
+1) We would like to inform you that the Branch working timings for select branches have been revised with effect from November 15, 2015. 
+To know the revised timings of our branches, please click here.
+<br> <br>
+2) Please note, with effect from June 1, 2016, there is a change in schedule of non-maintenance of Monthly Average Balance charges applicable for Savings Accounts variants.
+ Click here to know more.
+<p> 
+Safe Banking:<br>
+ GROUP FUND Bank will never send you e-mails or call you asking for confidential details of your account/ PIN/ Password/OTP/URN or personal details such as date of birth, mother's maiden name etc.
+Beware of anyone asking you for such information on behalf of the bank through e-mails or phone calls. 
+Please do not provide your bank account details to emails offering a job or claiming that you have won a lottery or open attachment of mails from unknown email id. 
+While it is our endeavour to provide you with the best of online services and facilities, the Bank is not responsible for any erroneous transactions made by you. 
+The Bank shall also not be responsible for misuse of your account arising from any wrong, inadvertent or other kind of disclosure of such details by you.
+ <p>
+Safe Online Banking<br>
+portal provides convenient personal banking services that can be availed at the comfort of your home or office.
+Want to learn about basics of online banking? Visit our Safe Online Banking Knowledge Centre.
+ </p>
+</font>
+</section>
+
+<footer>
+Copyright © GroupFund.com
+</footer>
+
+</body>
+</html>
