@@ -20,7 +20,9 @@ Admin: The admin is the controlling authority of the bank. He/She can control al
 
 Requirements: A database(Apache derby) that has the following tables:
   Banker(Name(Varchar), CountryCode(Integer), StateCode(Integer), ID(Integer), UserName(primary)(Varchar), Password(Varchar), BranchCode(Integer))
+  
   Customer(AccountName(Varchar), AccountBalance(Integer), CountryCode(Integer), StateCode(Integer), BranchCode(Integer), AccountNumber(Integer), UserName(Varchar), Password(Varchar))
+  
   Products(BranchCode(Integer), ProductCode(Integer))
 
 The CountryCode, StateCode, BranchCode, ID together make up the unique identification of a person.
